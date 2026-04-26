@@ -7,21 +7,22 @@ description: "Étudiant BTS SIO SLAM – Portfolio"
 plugins:
   - jekyll-include-cache
 
-# Navigation
-navigation:
-  - title: "Accueil"
-    url: /
-  - title: "À propos"
-    url: /apropos/
-  - title: "Compétences"
-    url: /competences/
-  - title: "Projets"
-    url: /projets/
-  - title: "Stages"
-    url: /stages/
-  - title: "Certifications"
-    url: /certifications/
-  - title: "Veille"
-    url: /veille/
-  - title: "Contact"
-    url: /contact/
+# Activer le header + menu
+header:
+  nav:
+    - title: "Accueil"
+      url: /
+    - title: "À propos"
+      url: /apropos/
+    - title: "Compétences"
+      url: /competences/
+    - title: "Projets"
+      url: /projets/
+    - title: "Stages"
+      url: /stages/
+    - title: "Certifications"
+      url: /certifications/
+    - title: "Veille"
+      url: /veille/
+    - title: "Contact"
+      url: /contact/
