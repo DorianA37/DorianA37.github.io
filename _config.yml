@@ -1,30 +1,5 @@
-remote_theme: "mmistakes/minimal-mistakes"
-
-title: "Portfolio Dorian"
-name: "Dorian"
-description: "Étudiant BTS SIO SLAM – Portfolio"
-
-plugins:
-  - jekyll-include-cache
-
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.0"
-  show_overlay_excerpt: false
-  nav:
-    - title: "Accueil"
-      url: /
-    - title: "À propos"
-      url: /apropos/
-    - title: "Compétences"
-      url: /competences/
-    - title: "Projets"
-      url: /projets/
-    - title: "Stages"
-      url: /stages/
-    - title: "Certifications"
-      url: /certifications/
-    - title: "Veille"
-      url: /veille/
-    - title: "Contact"
-      url: /contact/
+title: Modernist theme
+description: Modernist is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-modernist
