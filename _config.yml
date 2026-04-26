@@ -7,8 +7,10 @@ description: "Étudiant BTS SIO SLAM – Portfolio"
 plugins:
   - jekyll-include-cache
 
-# Activer le header + menu
 header:
+  overlay_color: "#000"
+  overlay_filter: "0.0"
+  show_overlay_excerpt: false
   nav:
     - title: "Accueil"
       url: /
