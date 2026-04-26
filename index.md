@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: home
 title: "Bienvenue sur mon portfolio"
 ---
 
