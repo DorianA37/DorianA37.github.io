@@ -1,3 +1,27 @@
 remote_theme: "mmistakes/minimal-mistakes"
+
+title: "Portfolio Dorian"
+name: "Dorian"
+description: "Étudiant BTS SIO SLAM – Portfolio"
+
 plugins:
   - jekyll-include-cache
+
+# Navigation
+navigation:
+  - title: "Accueil"
+    url: /
+  - title: "À propos"
+    url: /apropos/
+  - title: "Compétences"
+    url: /competences/
+  - title: "Projets"
+    url: /projets/
+  - title: "Stages"
+    url: /stages/
+  - title: "Certifications"
+    url: /certifications/
+  - title: "Veille"
+    url: /veille/
+  - title: "Contact"
+    url: /contact/
