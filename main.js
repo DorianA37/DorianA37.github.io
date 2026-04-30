@@ -98,7 +98,7 @@ const observer = new IntersectionObserver(entries => {
           const inc = target / 40;
           const t = setInterval(() => {
             current = Math.min(current + inc, target);
-            el.textContent = Math.floor(current) + (target > 9 ? '+' : '');
+            el.textContent = Math.floor(current) + (target > 3 ? '+' : '');
             if (current >= target) clearInterval(t);
           }, 30);
         });
@@ -122,7 +122,7 @@ function handleFormSubmit() {
     return;
   }
 
-  const mailto = `mailto:votre@email.com?subject=${encodeURIComponent(subject || 'Contact depuis le portfolio')}&body=${encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`)}`;
+  const mailto = `mailto:adam.dorian37@gmail.com?subject=${encodeURIComponent(subject || 'Contact depuis le portfolio')}&body=${encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`)}`;
   window.location.href = mailto;
   document.getElementById('form-msg').style.display = 'block';
 }
