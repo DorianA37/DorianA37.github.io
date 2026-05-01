@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="grid-bg"></div>
@@ -20,17 +20,18 @@
 
   <!-- NAV -->
   <nav id="navbar">
-    <a href="#hero" class="nav-logo">&lt;<span>Dev</span>/&gt;</a>
+    <a href="index.html" class="nav-logo">Dorian Adam</a>
     <ul class="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#experience">Expérience</a></li>
-      <li><a href="#education">Formation</a></li>
-      <li><a href="#veille">Veille</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" >accueil</a></li>
+      <li><a href="apropos.html">à propos</a></li>
+      <li><a href="projets.html">projets</a></li>
+      <li><a href="experiences.html">expériences</a></li>
+      <li><a href="formation.html">formations</a></li>
+      <li><a href="competences.html">compétences</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="e5.html">E5</a></li>
     </ul>
-    <a href="[LIEN_CV]" class="nav-cta" target="_blank" rel="noopener">CV.pdf ↗</a>
+    <a href="fichiers/CV Dorian Adam (1).pdf" class="nav-cta" target="_blank" rel="noopener">CV.pdf ↗</a>
     <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -38,13 +39,14 @@
 
   <div class="mobile-menu" id="mobileMenu">
     <button class="mobile-close" id="mobileClose">✕</button>
-    <a href="#about">À propos</a>
-      <a href="#skills">Compétences</a>
-      <a href="#projects">Projets</a>
-      <a href="#experience">Expérience</a>
-      <a href="#education">Formation</a>
-      <a href="#veille">Veille</a>
-      <a href="#contact">Contact</a>
+    <a href="index.html" class="mobile-link">accueil</a>
+    <a href="apropos.html" class="mobile-link">à propos</a>
+    <a href="projets.html" class="mobile-link">projets</a>
+    <a href="stages.html" class="mobile-link">expérience</a>
+    <a href="formation.html">formations</a>
+    <a href="competences.html" class="mobile-link">compétences</a>
+    <a href="contact.html" class="mobile-link">contact</a>
+    <a href="e5.html">E5</a>
   </div>
 
   <!-- HERO -->
@@ -59,15 +61,37 @@
         Étudiant en BTS SIO option SLAM · Passionné par le développement web et logiciel · En quête de challenges techniques.
       </p>
       <div class="hero-btns">
-        <a href="#projects" class="btn-primary">
+        <a href="projets.html" class="btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           Voir mes projets
         </a>
-        <a href="#contact" class="btn-secondary">
+        <a href="fichiers/CV Dorian Adam (1).pdf" class="btn-secondary" download rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Télécharger le CV
+          </a>
+        <a href="contact.html" class="btn-secondary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           Me contacter
         </a>
       </div>
+      <div class="hero-stats">
+          <div class="stat-chip">
+            <span class="stat-chip-val" data-target="4">0+</span>
+            <span class="stat-chip-lbl">Projets réalisés</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-chip-val" data-target="2">0</span>
+            <span class="stat-chip-lbl">Stages effectués</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-chip-val" data-target="10">0+</span>
+            <span class="stat-chip-lbl">Technos maîtrisées</span>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-chip-val">B2</span>
+            <span class="stat-chip-lbl">Anglais</span>
+          </div>
+        </div>
     </div>
 
     <pre class="hero-blob"><span class="hl">class</span> <span class="hl2">Developer</span> {
@@ -92,451 +116,63 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="reveal">
-      <div class="section-label">// 01 · À propos</div>
-      <h2>Qui suis-je ?</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="about-grid">
-      <div class="about-img-wrap reveal">
-        <div class="about-img-placeholder">
-          <img class="about-img" src="photo.jpeg" alt="photo de Dorian ADAM">
-        </div>
-        <div class="about-frame"></div>
+  <!-- EXPLORER LE PORTFOLIO -->
+    <section class="section-explore">
+      <div class="explore-header reveal">
+        <div class="explore-kicker">// Explorer le portfolio</div>
+        <h2>Découvrez mon parcours</h2>
       </div>
-      <div class="about-info reveal">
-        <h3>Dorian <span style="color:var(--green)">ADAM</span></h3>
-        <p>
-          Étudiant en 2ème année de BTS SIO option SLAM au Campus Sainte-Marguerite, je suis passionné par le développement d'applications web et logiciels. J'aime résoudre des problèmes complexes avec du code propre et efficace.
-        </p>
-        <p>
-En dehors de mes études, je m’intéresse à tout ce qui peut m’aider à mieux comprendre mon environnement professionnel et à améliorer ma façon de travailler. J’aime explorer, tester, apprendre et avancer étape par étape. Mon objectif est de rejoindre une équipe qui encourage la progression et la prise d’initiative.        </p>
-        <div class="about-badges">
-          <span class="badge"> Tours, France</span>
-          <span class="badge"> adam.dorian37@gmail.com</span>
-          <span class="badge">📱 +33 7 82 14 66 44</span>
-          <span class="badge"> Ouvert aux opportunités</span>
-        </div>
-        <div class="about-stats">
-          <div class="stat">
-            <div class="stat-num" data-target="4">0</div>
-            <div class="stat-label">Projets réalisés</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num" data-target="2">0</div>
-            <div class="stat-label">Ans de formation</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num" data-target="10">0</div>
-            <div class="stat-label">Technos maîtrisées</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="cards-grid">
 
-  <!-- SKILLS -->
-<section id="skills">
-  <div class="reveal">
-    <div class="section-label">// 02 · Compétences</div>
-    <h2>Mon stack technique</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="skills-grid">
+        <a href="apropos.html" class="section-card reveal">
+          <div class="card-icon">👤</div>
+          <div class="card-title">À propos</div>
+          <div class="card-desc">Mon parcours, ma formation et mes centres d'intérêt dans le développement logiciel.</div>
+        </a>
 
-    <!-- Backend -->
-    <div class="skill-category reveal">
-      <div class="cat-header">
-        <div class="cat-icon">⚙️</div>
-        <div class="cat-title">Développement Backend</div>
-      </div>
+        <a href="projets.html" class="section-card reveal">
+          <div class="card-icon">💻</div>
+          <div class="card-title">Projets</div>
+          <div class="card-desc">Applications web, APIs, outils CLI — mes réalisations techniques documentées.</div>
+        </a>
 
-      <div class="skill-item">
-        <div class="skill-name">PHP <span>Bon niveau</span></div>
-      </div>
+        <a href="experiences.html" class="section-card reveal">
+          <div class="card-icon">🏢</div>
+          <div class="card-title">Expériences</div>
+          <div class="card-desc">Mes expériences en entreprise et les missions que j'y ai accomplies.</div>
+        </a>
 
-      <div class="skill-item">
-        <div class="skill-name">C# <span>Intermédiaire</span></div>
-      </div>
+        <a href="competences.html" class="section-card reveal">
+          <div class="card-icon">⚡</div>
+          <div class="card-title">Compétences</div>
+          <div class="card-desc">PHP, Java, SQL, JavaScript — mon stack technique aligné sur le référentiel BTS SIO SLAM.</div>
+        </a>
 
-      <div class="skill-item">
-        <div class="skill-name">Java <span>Intermédiaire</span></div>
-      </div>
+        <a href="formation.html" class="section-card reveal">
+          <div class="card-icon">🎓</div>
+          <div class="card-title">Formation</div>
+          <div class="card-desc">Mon parcours académique.</div>
+        </a>
 
-      <div class="tech-tags">
-        <span class="tech-tag">PHP</span>
-        <span class="tech-tag">Java</span>
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">C#</span>
-      </div>
-    </div>
-
-    <!-- Frontend -->
-    <div class="skill-category reveal">
-      <div class="cat-header">
-        <div class="cat-icon">🎨</div>
-        <div class="cat-title">Développement Frontend</div>
-      </div>
-
-      <div class="skill-item">
-        <div class="skill-name">HTML / CSS <span>Bon niveau</span></div>
-      </div>
-
-      <div class="skill-item">
-        <div class="skill-name">JavaScript <span>En apprentissage / Bases</span></div>
-      </div>
-
-      <div class="skill-item">
-        <div class="skill-name">Bootstrap <span>En apprentissage</span></div>
-      </div>
-
-      <div class="tech-tags">
-        <span class="tech-tag">HTML5</span>
-        <span class="tech-tag">CSS3</span>
-        <span class="tech-tag">SCSS</span>
-        <span class="tech-tag">JavaScript</span>
-      </div>
-    </div>
-
-    <!-- BDD -->
-    <div class="skill-category reveal">
-      <div class="cat-header">
-        <div class="cat-icon">🗄️</div>
-        <div class="cat-title">Bases de données</div>
-      </div>
-
-      <div class="skill-item">
-        <div class="skill-name">MySQL / MariaDB <span>Maîtrisé</span></div>
-      </div>
-
-      <div class="skill-item">
-        <div class="skill-name">SQLite <span>Intermédiaire</span></div>
-      </div>
-
-      <div class="skill-item">
-        <div class="skill-name">MongoDB <span>Bases</span></div>
-      </div>
-
-      <div class="tech-tags">
-        <span class="tech-tag">MySQL</span>
-        <span class="tech-tag">SQL</span>
-        <span class="tech-tag">MongoDB</span>
-        <span class="tech-tag">UML</span>
-      </div>
-    </div>
-
-    <!-- Outils -->
-    <div class="skill-category reveal">
-      <div class="cat-header">
-        <div class="cat-icon">🛠️</div>
-        <div class="cat-title">Outils & DevOps</div>
-      </div>
-
-      <div class="skill-item">
-        <div class="skill-name">Git / GitHub <span>Maîtrisé</span></div>
-      </div>
-
-      <div class="skill-item">
-        <div class="skill-name">Matomo <span>Bases</span></div>
-      </div>
-
-      <div class="skill-item">
-        <div class="skill-name">Docker <span>Intermédiaire</span></div>
-      </div>
-
-      <div class="tech-tags">
-        <span class="tech-tag">Git</span>
-        <span class="tech-tag">DDEV</span>
-        <span class="tech-tag">Matomo</span>
-        <span class="tech-tag">Docker</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="reveal">
-      <div class="section-label">// 03 · Projets</div>
-      <h2>Réalisations</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="projects-grid">
-      <!-- Projet 1 -->
-      <div class="project-card reveal">
-        <div class="project-img">
-          <div class="img-bg"><img src="MIVDL.png" alt="miniature"></div>
-
-        </div>
-        <div class="project-body">
-          <div class="project-type">Site Web</div>
-          <div class="project-title">Cyber quiz MIVDL</div>
-          <div class="project-desc">
-            Description du projet. 
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">PHP</span>
-            <span class="project-tag">MySQL</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">Bootstrap</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Sainte-Marguerite-SIO2-SLAM-2025-2026/ProjetMadeInValDeLoire" class="project-link" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
-            </a>
-            <a href="#" class="project-link" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Demo
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Projet 2 -->
-      <div class="project-card reveal">
-        <div class="project-img">
-          <div class="img-bg"><img src="cyber_espace_entrainement.png" alt="miniature"></div>
-
-        </div>
-        <div class="project-body">
-          <div class="project-type">Application Desktop</div>
-          <div class="project-title">Cyber Espace Entrainement</div>
-          <div class="project-desc">
-            Description du deuxième projet. 
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">C#</span>
-            <span class="project-tag">WPF</span>
-            <span class="project-tag">SQLite</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Sainte-Marguerite-SIO2-SLAM-2025-2026/Cyber_Espace_Entrainement" class="project-link" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
-            </a>
-            <a href="#" class="project-link" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              Demo
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- Projet 3 -->
-      <div class="project-card reveal">
-        <div class="project-img">
-          <div class="img-bg"><img src="opengraph.png" alt="miniature"></div>
-        </div>
-        <div class="project-body">
-          <div class="project-type">Site Wordpress / théme sur mesure</div>
-          <div class="project-title">Cheikhnico</div>
-          <div class="project-desc">
-            Description du troisième projet. 
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">Wordpress</span>
-            <span class="project-tag">PHP</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">SCSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://cheikhnico.org/" class="project-link" target="_blank">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              Voir le site
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="reveal">
-      <div class="section-label">// 04 · Expérience</div>
-      <h2>Stages & Expériences</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="timeline reveal">
-      <div class="timeline-item">
-        <div class="timeline-date">9 Mars au 17 Avril 2026 · 6 semaines</div>
-        <div class="timeline-role">Développeur Stagiaire</div>
-        <div class="timeline-company">L&B synergie · Tours</div>
-        <div class="timeline-desc">
-          L'entreprise L&B Synergie a décidé de migrer un site de Drupal à WordPress pour l'un de leur client.
-        </div>
-        <ul class="timeline-tasks">
-          <li>Création d'un thème WordPress sur-mesure</li>
-          <li>Migration / refonte d'un site de Drupal à WordPress</li>
-          <li>Accompagnement du client sur la nouvelle solution</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">Novembre 2026 </div>
-        <div class="timeline-role">Développeur </div>
-        <div class="timeline-company">Campus Sainte-Marguerite · Chambray-Les-Tours</div>
-        <div class="timeline-desc">
-          Le campus Sainte-Marguerite souhaite présenter un site web, abordant la cybersécurité sous la forme d’un escape game au salon Made In Val De Loire.
-        </div>
-        <ul class="timeline-tasks">
-          <li>Rédaction cahier des charges de la Salle qui m'a été attribué</li>
-          <li>Planification des tâches</li>
-          <li>Maintenance</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">Mai - Juin 2025 · 6 semaines</div>
-        <div class="timeline-role">Développeur Stagiaire</div>
-        <div class="timeline-company">CITERADIO · Tours</div>
-        <div class="timeline-desc">
-           La radio locale de Tours (CITERADIO) voulais bénéficier d'une application mobile afin de gagner en visibilité.
-        </div>
-        <ul class="timeline-tasks">
-          <li>Développement d'une application</li>
-          <li>Rédaction de documentation technique</li>
-          <li>Correction de bugs et amélioration des performances</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">Juillet - Août 2022 · 1 mois</div>
-        <div class="timeline-role">Job d'été</div>
-        <div class="timeline-company">Buvette de la baignade · Arrou</div>
-        <div class="timeline-desc">
-           La baignade est une mini plage synthétique permettant aux gens de se détendre et aux enfants de s'amuser.
-        </div>
-        <ul class="timeline-tasks">
-          <li>Gestion des stocks</li>
-          <li>Service de boissons, nourriture rapide et glaces</li>
-          <li>Relation client</li>
-        </ul>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">Septembre 2021 - Juin 2022 · 1 an</div>
-        <div class="timeline-role">Service civique</div>
-        <div class="timeline-company">Ecole Paul Racault · Tours</div>
-        <div class="timeline-desc">
-           L'école Paul Racault cherchait un service civique pour aider dans l'organisation quotidienne.
-        </div>
-        <ul class="timeline-tasks">
-          <li>Assistance scolaire auprès de classes de niveau petite section à CM2</li>
-          <li>Organisation / animation d'activités sportive</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="reveal">
-      <div class="section-label">// 05 · Formation</div>
-      <h2>Parcours académique</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="edu-grid">
-      <div class="edu-card reveal">
-        <div class="edu-year">2024 — Maintenant</div>
-        <div class="edu-degree">BTS SIO — option SLAM</div>
-        <div class="edu-school">Campus Sainte-Marguerite · Chambray-Les-Tours</div>
-        <div class="edu-desc">
-          Services Informatiques aux Organisations, option Solutions Logicielles et Applications Métiers. Formation axée sur le développement d'applications, la gestion de bases de données, et la cybersécurité.
-        </div>
-        <span class="edu-badge">En cours</span>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-year">2022 — 2023</div>
-        <div class="edu-degree">BTS SIO - option SLAM - 1re année</div>
-        <div class="edu-school">CNED · Poitiers</div>
-        <div class="edu-desc">
-Validé au niveau des notes, mais je n'ai pas trouvé de stage ce qui a engendré la non validation de l'année        
-</div>
-        <span class="edu-badge">non validé</span>
+        <a href="contact.html" class="section-card reveal">
+          <div class="card-icon">✉️</div>
+          <div class="card-title">Contact</div>
+          <div class="card-desc">Disponible pour stage, alternance ou collaboration — n'hésitez pas à me contacter.</div>
+        </a>
 
       </div>
-      <div class="edu-card reveal">
-        <div class="edu-year">2020 — 2021</div>
-        <div class="edu-degree">Licence de gestion - option économie - 1re année</div>
-        <div class="edu-school">IAE · Tours</div>
-        <div class="edu-desc">
-Je me suis rendu compte que ce n'était pas le genre de choses que je voulais faire plus tard donc j'ai arrété
-      </div>
-              <span class="edu-badge">non validé</span>
+    </section>
 
+     <!-- CTA -->
+    <section class="cta-banner">
+      <div class="reveal">
+        <h2>Intéressé par mon profil ?</h2>
+        <p>N'hésitez pas à me contacter pour discuter d'opportunités de stage, d'alternance ou simplement échanger autour du développement.</p>
+        <a href="contact.html" class="btn btn-primary">Me contacter →</a>
       </div>
-      <div class="edu-card reveal">
-        <div class="edu-year">2019 — 2020</div>
-        <div class="edu-degree">Baccalauréat ES</div>
-        <div class="edu-school">Emile Zola · Châteaudun</div>
-        <span class="edu-badge">Obtenu</span>
-      </div>
-      
-    </div>
-  </section>
+    </section>
 
-  <!-- VEILLE -->
-  <section id="veille">
-    
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="reveal">
-      <div class="section-label">// 07 · Contact</div>
-      <h2>Travaillons ensemble</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <h3>Une idée ? Un projet ? Un recrutement ?</h3>
-        <p>
-          N'hésitez pas à me contacter pour toute proposition : stage, alternance, collaboration ou simple échange autour du développement.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:votre@email.com" class="contact-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            adam.dorian37@gmail.com
-          </a>
-          <a href="https://github.com/votre-pseudo" class="contact-link" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            https://github.com/DorianA37
-          </a>
-          <a href="https://linkedin.com/in/votre-profil" class="contact-link" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-             https://www.linkedin.com/in/dorian-adam-8507aa255/
-          </a>
-        </div>
-      </div>
-      <div class="contact-form reveal">
-        <div class="form-group">
-          <label>NOM COMPLET</label>
-          <input type="text" id="form-name" placeholder="Jean Dupont" />
-        </div>
-        <div class="form-group">
-          <label>EMAIL</label>
-          <input type="email" id="form-email" placeholder="jean@example.com" />
-        </div>
-        <div class="form-group">
-          <label>SUJET</label>
-          <input type="text" id="form-subject" placeholder="Proposition de stage / alternance..." />
-        </div>
-        <div class="form-group">
-          <label>MESSAGE</label>
-          <textarea id="form-message" placeholder="Bonjour, je vous contacte au sujet de..."></textarea>
-        </div>
-        <button class="form-submit" onclick="handleFormSubmit()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          Envoyer le message
-        </button>
-        <div class="form-msg" id="form-msg">
-          ✓ Message envoyé ! Je vous répondrai dans les plus brefs délais.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+     <!-- FOOTER -->
   <footer>
     <div class="footer-copy">
       Conçu & développé par <span>Dorian ADAM</span> · <span id="footer-year"></span>
@@ -554,6 +190,6 @@ Je me suis rendu compte que ce n'était pas le genre de choses que je voulais fa
     </div>
   </footer>
 
- <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
