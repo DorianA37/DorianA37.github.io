@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Développeur BTS SIO SLAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+  <div id="progress-bar"></div>
+  <a href="#" id="back-to-top" aria-label="Retour en haut">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Dorian Adam</a>
+    <ul class="nav-links">
+      <li><a href="index.html" >accueil</a></li>
+      <li><a href="apropos.html">à propos</a></li>
+      <li><a href="projets.html">projets</a></li>
+      <li><a href="experiences.html">expériences</a></li>
+      <li><a href="formation.html">formations</a></li>
+      <li><a href="competences.html">compétences</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="e5.html">E5</a></li>
+    </ul>
+    <a href="fichiers/CV Dorian Adam (1).pdf" class="nav-cta" target="_blank" rel="noopener">CV.pdf ↗</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <a href="index.html" class="mobile-link">accueil</a>
+    <a href="apropos.html" class="mobile-link">à propos</a>
+    <a href="projets.html" class="mobile-link">projets</a>
+    <a href="stages.html" class="mobile-link">expérience</a>
+    <a href="formation.html">formations</a>
+    <a href="competences.html" class="mobile-link">compétences</a>
+    <a href="contact.html" class="mobile-link">contact</a>
+    <a href="e5.html">E5</a>
+  </div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <div class="page-hero">
+      <div class="page-kicker">// E5 · Épreuve de synthèse</div>
+      <h1>Tableau de synthèse</h1>
+      <p>BTS SIO option SLAM — Session 2026 · <span style="color:var(--accent-light)">Dorian Adam</span> · Campus Sainte Marguerite, Chambray-lès-Tours</p>
+    </div>
+
+    <div class="page-content">
+
+      <!-- ═══ TABLEAU DE COMPÉTENCES ═══ -->
+      <section class="e5-section reveal">
+        <h2 class="section-title">Tableau de synthèse des réalisations professionnelles</h2>
+        <div class="section-sep"></div>
+        <p class="e5-intro">
+          Référentiel BTS SIO — Session 2026 ·
+          <a href="https://doriana37.github.io/" target="_blank" rel="noopener" class="e5-url">doriana37.github.io</a>
+        </p>
+
+        <div class="table-scroll-hint">← DÉFILER HORIZONTALEMENT →</div>
+
+        <div class="table-wrapper reveal">
+          <table class="e5-table" id="competence-table">
+            <thead>
+              <tr>
+                <th rowspan="2" class="col-realisation">Réalisations professionnelles</th>
+                <th rowspan="2" class="col-period">Période</th>
+                <th colspan="5" class="th-bloc">Gérer le patrimoine informatique</th>
+                <th colspan="3" class="th-bloc">Répondre aux incidents</th>
+                <th colspan="3" class="th-bloc">Développer la présence en ligne</th>
+                <th colspan="3" class="th-bloc">Travailler en mode projet</th>
+                <th colspan="3" class="th-bloc">Mettre à disposition un service</th>
+                <th colspan="4" class="th-bloc">Développement professionnel</th>
+              </tr>
+              <tr>
+                <th class="th-comp" title="Recenser et identifier les ressources numériques">GPI 1</th>
+                <th class="th-comp" title="Exploiter des référentiels, normes et standards">GPI 2</th>
+                <th class="th-comp" title="Mettre en place et vérifier les niveaux d'habilitation">GPI 3</th>
+                <th class="th-comp" title="Vérifier les conditions de la continuité d'un service">GPI 4</th>
+                <th class="th-comp" title="Gérer des sauvegardes">GPI 5</th>
+                <th class="th-comp" title="Collecter, suivre et orienter des demandes">INC 1</th>
+                <th class="th-comp" title="Traiter des demandes réseau et système">INC 2</th>
+                <th class="th-comp" title="Traiter des demandes applicatives">INC 3</th>
+                <th class="th-comp" title="Valoriser l'image de l'organisation sur les médias numériques">WEB 1</th>
+                <th class="th-comp" title="Référencer les services en ligne et mesurer leur visibilité">WEB 2</th>
+                <th class="th-comp" title="Participer à l'évolution d'un site Web">WEB 3</th>
+                <th class="th-comp" title="Analyser les objectifs et modalités d'organisation d'un projet">PRJ 1</th>
+                <th class="th-comp" title="Planifier les activités">PRJ 2</th>
+                <th class="th-comp" title="Évaluer les indicateurs de suivi et analyser les écarts">PRJ 3</th>
+                <th class="th-comp" title="Réaliser les tests d'intégration et d'acceptation">SRV 1</th>
+                <th class="th-comp" title="Déployer un service">SRV 2</th>
+                <th class="th-comp" title="Accompagner les utilisateurs">SRV 3</th>
+                <th class="th-comp" title="Mettre en place son environnement d'apprentissage personnel">DEV 1</th>
+                <th class="th-comp" title="Mettre en œuvre des outils et stratégies de veille">DEV 2</th>
+                <th class="th-comp" title="Gérer son identité professionnelle">DEV 3</th>
+                <th class="th-comp" title="Développer son projet professionnel">DEV 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ── EN COURS DE FORMATION ── -->
+              <tr class="tr-category">
+                <td colspan="22">Réalisations en cours de formation</td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="mivdl-front">
+                <td class="td-title">
+                  <span class="realisation-label">Site Web MadeInValDeLoire</span>
+                  <span class="realisation-sub">PHP, HTML, CSS, JS, MySQL, CodeIgniter4 — visiteur</span>
+                </td>
+                <td class="td-period">09/2025<br>11/2025</td>
+                <td>✔</td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td>✔</td><td></td>
+                <td>✔</td><td></td><td></td>
+                <td>✔</td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="mivdl-admin">
+                <td class="td-title">
+                  <span class="realisation-label">Site Web MadeInValDeLoire</span>
+                  <span class="realisation-sub">PHP, HTML, CSS, JS, MySQL, CodeIgniter4 — back / admin</span>
+                </td>
+                <td class="td-period">11/2025<br>12/2025</td>
+                <td>✔</td><td>✔</td><td>✔</td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td></td><td></td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td>✔</td><td></td>
+                <td>✔</td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="ecommerce">
+                <td class="td-title">
+                  <span class="realisation-label">Site web e-commerce</span>
+                  <span class="realisation-sub">PHP, HTML, CSS, PhpStorm</span>
+                </td>
+                <td class="td-period">01/2025<br>03/2025</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td>✔</td><td></td>
+                <td>✔</td><td>✔</td><td></td>
+                <td>✔</td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="veille">
+                <td class="td-title">
+                  <span class="realisation-label">Veille informationnelle LinkedIn</span>
+                </td>
+                <td class="td-period">09/2024<br>06/2026</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="oc">
+                <td class="td-title">
+                  <span class="realisation-label">Auto-formation Openclassroom</span>
+                </td>
+                <td class="td-period">09/2024<br>06/2026</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td>✔</td><td>✔</td><td>✔</td><td>✔</td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="cyber">
+                <td class="td-title">
+                  <span class="realisation-label">Projet Cyber-entrainement</span>
+                  <span class="realisation-sub">C#, SQLite, WPF</span>
+                </td>
+                <td class="td-period">01/2026<br>04/2026</td>
+                <td>✔</td><td>✔</td><td>✔</td><td></td><td></td>
+                <td>✔</td><td></td><td>✔</td>
+                <td></td><td></td><td></td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="glpi">
+                <td class="td-title"><span class="realisation-label">TP GLPI</span></td>
+                <td class="td-period">2024/2025</td>
+                <td>✔</td><td>✔</td><td></td><td></td><td></td>
+                <td>✔</td><td>✔</td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="ad">
+                <td class="td-title"><span class="realisation-label">TP Active Directory</span></td>
+                <td class="td-period">2024/2025</td>
+                <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td>
+                <td></td><td>✔</td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td>✔</td><td></td>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="dos">
+                <td class="td-title"><span class="realisation-label">TP DOS</span></td>
+                <td class="td-period">2024/2025</td>
+                <td>✔</td><td></td><td></td><td></td><td></td>
+                <td></td><td>✔</td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td>✔</td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="cluster">
+                <td class="td-title"><span class="realisation-label">TP Cluster MySQL</span></td>
+                <td class="td-period">2025</td>
+                <td>✔</td><td>✔</td><td></td><td>✔</td><td>✔</td>
+                <td></td><td>✔</td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td>✔</td><td></td>
+                <td>✔</td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="maui">
+                <td class="td-title"><span class="realisation-label">TP MAUI</span></td>
+                <td class="td-period">avr. 2025</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td>✔</td><td></td><td></td>
+                <td>✔</td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="tests">
+                <td class="td-title">
+                  <span class="realisation-label">TP Tests Unitaires</span>
+                  <span class="realisation-sub">PHP</span>
+                </td>
+                <td class="td-period">oct. 2025</td>
+                <td></td><td>✔</td><td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td>✔</td><td></td><td></td>
+                <td>✔</td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="triggers">
+                <td class="td-title">
+                  <span class="realisation-label">TP Triggers, Fonctions, Procédures</span>
+                  <span class="realisation-sub">MySQL</span>
+                </td>
+                <td class="td-period">10/2025<br>12/2025</td>
+                <td></td><td>✔</td><td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td>✔</td><td></td><td></td>
+                <td>✔</td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="phpcs">
+                <td class="td-title">
+                  <span class="realisation-label">Formation utilisateur PHPCS</span>
+                  <span class="realisation-sub">Code Sniffer</span>
+                </td>
+                <td class="td-period">nov. 2025</td>
+                <td></td><td>✔</td><td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td>✔</td><td>✔</td><td></td><td></td>
+              </tr>
+
+              <!-- ── STAGE 1ère ANNÉE ── -->
+              <tr class="tr-category">
+                <td colspan="22">Réalisations en milieu professionnel — 1ère année</td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="citeradio-app">
+                <td class="td-title">
+                  <span class="realisation-label">Application CITERADIO</span>
+                  <span class="realisation-sub">MIT App Inventor, HTML, CSS, PHP</span>
+                </td>
+                <td class="td-period">05/2025<br>06/2025</td>
+                <td>✔</td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td>✔</td><td></td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td></td><td>✔</td><td>✔</td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="citeradio-jeu-front">
+                <td class="td-title">
+                  <span class="realisation-label">Jeux concours CITERADIO — visiteur</span>
+                  <span class="realisation-sub">HTML, CSS, PHP</span>
+                </td>
+                <td class="td-period">05/2025<br>06/2025</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td></td><td></td>
+                <td>✔</td><td>✔</td><td></td>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="citeradio-jeu-admin">
+                <td class="td-title">
+                  <span class="realisation-label">Jeux concours CITERADIO — admin</span>
+                  <span class="realisation-sub">HTML, CSS, PHP</span>
+                </td>
+                <td class="td-period">05/2025<br>06/2025</td>
+                <td></td><td></td><td>✔</td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td></td><td></td><td>✔</td>
+                <td></td><td></td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+
+              <!-- ── STAGE 2ème ANNÉE ── -->
+              <tr class="tr-category">
+                <td colspan="22">Réalisations en milieu professionnel — 2ème année</td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="cheikhnico">
+                <td class="td-title">
+                  <span class="realisation-label">Site cheikhnico.org — thème sur-mesure</span>
+                  <span class="realisation-sub">WordPress, HTML, SCSS, JS, PHP</span>
+                </td>
+                <td class="td-period">04/2026<br>05/2026</td>
+                <td></td><td>✔</td><td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td></td><td>✔</td><td>✔</td>
+              </tr>
+
+              <tr class="tr-realisation" data-project="dominique">
+                <td class="td-title">
+                  <span class="realisation-label">Landing page Dominique Chauvelier</span>
+                  <span class="realisation-sub">HTML, CSS, JS</span>
+                </td>
+                <td class="td-period">mai 2026</td>
+                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td>✔</td>
+                <td>✔</td><td>✔</td><td>✔</td>
+                <td>✔</td><td>✔</td><td></td>
+                <td>✔</td><td>✔</td><td></td>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Légende -->
+        <div class="e5-legend reveal">
+          <div class="legend-item"><span class="legend-check">✔</span> Compétence mobilisée</div>
+          <div class="legend-item"><span class="legend-dot bloc-gpi"></span> Gérer le patrimoine informatique (GPI)</div>
+          <div class="legend-item"><span class="legend-dot bloc-inc"></span> Répondre aux incidents (INC)</div>
+          <div class="legend-item"><span class="legend-dot bloc-web"></span> Présence en ligne (WEB)</div>
+          <div class="legend-item"><span class="legend-dot bloc-prj"></span> Mode projet (PRJ)</div>
+          <div class="legend-item"><span class="legend-dot bloc-srv"></span> Mise à disposition (SRV)</div>
+          <div class="legend-item"><span class="legend-dot bloc-dev"></span> Développement pro (DEV)</div>
+        </div>
+      </section>
+
+      <!-- ═══ PROJETS ═══ -->
+      <section class="e5-section" style="margin-top: 5rem;">
+        <h2 class="section-title reveal">Réalisations détaillées</h2>
+        <div class="section-sep reveal"></div>
+
+        <!-- Filtres -->
+        <div class="e5-filters reveal">
+          <button class="e5-filter active" data-filter="all">Tous</button>
+          <button class="e5-filter" data-filter="formation">Formation</button>
+          <button class="e5-filter" data-filter="stage">Stage</button>
+          <button class="e5-filter" data-filter="web">Web</button>
+          <button class="e5-filter" data-filter="app">Application</button>
+        </div>
+
+        <div class="e5-projects-grid" id="e5-grid">
+
+          <!-- MadeInValDeLoire -->
+          <div class="e5-card reveal" data-tags="formation web" data-project="mivdl-front">
+            <div class="e5-card-thumb">
+              <div class="thumb-grid"></div>
+              <span class="e5-card-emoji">🌍</span>
+              <div class="e5-card-badge">Formation</div>
+            </div>
+            <div class="e5-card-body">
+              <div class="e5-card-type">Application Web · Sep–Déc 2025</div>
+              <div class="e5-card-title">Site Web MadeInValDeLoire</div>
+              <div class="e5-card-desc">
+                Plateforme de valorisation des producteurs locaux du Val de Loire. Développé avec CodeIgniter4, comprenant une partie visiteur (catalogue, recherche, fiches produits) et une partie back-office (gestion des producteurs, des produits, des commandes).
+              </div>
+              <div class="e5-card-competences">
+                <span class="comp-tag">WEB 1</span>
+                <span class="comp-tag">WEB 3</span>
+                <span class="comp-tag">PRJ 1</span>
+                <span class="comp-tag">PRJ 2</span>
+                <span class="comp-tag">SRV 1</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">CodeIgniter4</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">HTML/CSS/JS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Démo
+                </a>
+                <a href="#" class="project-link e5-doc-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Docs
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cyber-entrainement -->
+          <div class="e5-card reveal" data-tags="formation app" data-project="cyber">
+            <div class="e5-card-thumb">
+              <div class="thumb-grid"></div>
+              <span class="e5-card-emoji">🛡️</span>
+              <div class="e5-card-badge">Formation</div>
+            </div>
+            <div class="e5-card-body">
+              <div class="e5-card-type">Application Desktop · Jan–Avr 2026</div>
+              <div class="e5-card-title">Projet Cyber-entrainement</div>
+              <div class="e5-card-desc">
+                Application d'entraînement à la cybersécurité sous Windows. Interface WPF permettant de réaliser des challenges de sécurité, de suivre sa progression et de consulter des fiches de cours. Base de données SQLite intégrée.
+              </div>
+              <div class="e5-card-competences">
+                <span class="comp-tag">GPI 1</span>
+                <span class="comp-tag">GPI 3</span>
+                <span class="comp-tag">INC 1</span>
+                <span class="comp-tag">PRJ 1</span>
+                <span class="comp-tag">SRV 3</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">C#</span>
+                <span class="project-tag">WPF</span>
+                <span class="project-tag">SQLite</span>
+                <span class="project-tag">.NET</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link e5-doc-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Docs
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Site e-commerce -->
+          <div class="e5-card reveal" data-tags="formation web" data-project="ecommerce">
+            <div class="e5-card-thumb">
+              <div class="thumb-grid"></div>
+              <span class="e5-card-emoji">🛒</span>
+              <div class="e5-card-badge">Formation</div>
+            </div>
+            <div class="e5-card-body">
+              <div class="e5-card-type">Application Web · Jan–Mar 2025</div>
+              <div class="e5-card-title">Site web e-commerce</div>
+              <div class="e5-card-desc">
+                Boutique en ligne développée en PHP pur avec gestion du panier, authentification utilisateur, interface d'administration et paiement simulé. Développé sous PhpStorm.
+              </div>
+              <div class="e5-card-competences">
+                <span class="comp-tag">WEB 1</span>
+                <span class="comp-tag">WEB 3</span>
+                <span class="comp-tag">PRJ 1</span>
+                <span class="comp-tag">SRV 1</span>
+                <span class="comp-tag">SRV 2</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">HTML/CSS</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">PhpStorm</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link e5-doc-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Docs
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CiteRadio -->
+          <div class="e5-card reveal" data-tags="stage web app" data-project="citeradio-app">
+            <div class="e5-card-thumb">
+              <div class="thumb-grid"></div>
+              <span class="e5-card-emoji">📻</span>
+              <div class="e5-card-badge e5-badge-stage">Stage 1A</div>
+            </div>
+            <div class="e5-card-body">
+              <div class="e5-card-type">Application Mobile + Web · Mai–Jun 2025</div>
+              <div class="e5-card-title">Application CITERADIO</div>
+              <div class="e5-card-desc">
+                Application mobile développée avec MIT App Inventor pour la radio CITERADIO, avec un jeu concours associé (version visiteur et admin) en PHP/HTML/CSS. Déployé en milieu professionnel.
+              </div>
+              <div class="e5-card-competences">
+                <span class="comp-tag">WEB 1</span>
+                <span class="comp-tag">WEB 3</span>
+                <span class="comp-tag">PRJ 1</span>
+                <span class="comp-tag">PRJ 3</span>
+                <span class="comp-tag">SRV 3</span>
+                <span class="comp-tag">DEV 3</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">MIT App Inventor</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">HTML/CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link e5-doc-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Docs
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- cheikhnico.org -->
+          <div class="e5-card reveal" data-tags="stage web" data-project="cheikhnico">
+            <div class="e5-card-thumb">
+              <div class="thumb-grid"></div>
+              <span class="e5-card-emoji">🌐</span>
+              <div class="e5-card-badge e5-badge-stage">Stage 2A</div>
+            </div>
+            <div class="e5-card-body">
+              <div class="e5-card-type">Site WordPress sur-mesure · Avr–Mai 2026</div>
+              <div class="e5-card-title">Site cheikhnico.org</div>
+              <div class="e5-card-desc">
+                Développement d'un thème WordPress entièrement sur-mesure pour le site cheikhnico.org. Intégration SCSS, JavaScript vanilla, et PHP pour les templates. Optimisation SEO et performances.
+              </div>
+              <div class="e5-card-competences">
+                <span class="comp-tag">WEB 1</span>
+                <span class="comp-tag">WEB 2</span>
+                <span class="comp-tag">WEB 3</span>
+                <span class="comp-tag">PRJ 1</span>
+                <span class="comp-tag">SRV 3</span>
+                <span class="comp-tag">DEV 3</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">WordPress</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">SCSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://cheikhnico.org" class="project-link" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Site
+                </a>
+                <a href="#" class="project-link e5-doc-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Docs
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Landing page Dominique -->
+          <div class="e5-card reveal" data-tags="stage web" data-project="dominique">
+            <div class="e5-card-thumb">
+              <div class="thumb-grid"></div>
+              <span class="e5-card-emoji">🎨</span>
+              <div class="e5-card-badge e5-badge-stage">Stage 2A</div>
+            </div>
+            <div class="e5-card-body">
+              <div class="e5-card-type">Landing Page · Mai 2026</div>
+              <div class="e5-card-title">Landing page Dominique Chauvelier</div>
+              <div class="e5-card-desc">
+                Création d'une landing page professionnelle pour un client. Design responsive, animations CSS, formulaire de contact fonctionnel. Livré en HTML/CSS/JS statique.
+              </div>
+              <div class="e5-card-competences">
+                <span class="comp-tag">WEB 1</span>
+                <span class="comp-tag">WEB 2</span>
+                <span class="comp-tag">WEB 3</span>
+                <span class="comp-tag">PRJ 1</span>
+                <span class="comp-tag">SRV 1</span>
+                <span class="comp-tag">SRV 2</span>
+              </div>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link e5-doc-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Docs
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /#e5-grid -->
+      </section>
+    </div><!-- /.page-content -->
+
+     <footer>
+    <div class="footer-copy">
+      Conçu & développé par <span>Dorian ADAM</span> · <span id="footer-year"></span>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com/DorianA37" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/dorian-adam-8507aa255/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="mailto:adam.dorian37@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+  </footer>
+  </div><!-- /.page -->
+
+  <script src="js/main.js"></script>
+<script>
+/* ═══════════════════════════════════════════
+   JS — E5.html  (main.js + E5.js fusionnés)
+   ═══════════════════════════════════════════ */
+
+/* ── FOOTER YEAR ── */
+const fyEl = document.getElementById('footer-year');
+if (fyEl) fyEl.textContent = new Date().getFullYear();
+
+/* ── PROGRESS BAR ── */
+const progressBar = document.getElementById('progress-bar');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  if (progressBar) progressBar.style.width = pct + '%';
+});
+
+/* ── NAVBAR SHRINK ── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+/* ── BACK TO TOP ── */
+const btt = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  if (btt) btt.classList.toggle('visible', window.scrollY > 300);
+});
+if (btt) {
+  btt.addEventListener('click', e => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+/* ── MOBILE MENU ── */
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu   = document.getElementById('mobileMenu');
+const mobileClose  = document.getElementById('mobileClose');
+
+if (hamburgerBtn && mobileMenu) {
+  hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+}
+if (mobileClose && mobileMenu) {
+  mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+}
+
+/* ── REVEAL ON SCROLL (IntersectionObserver) ── */
+const revealEls = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      // petit délai en cascade pour les éléments dans le même viewport
+      entry.target.style.transitionDelay = (i * 0.04) + 's';
+      entry.target.classList.add('visible');
+      revealObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+revealEls.forEach(el => revealObs.observe(el));
+
+/* ── FILTRES CARDS ── */
+const filterBtns = document.querySelectorAll('.e5-filter');
+const cards      = document.querySelectorAll('.e5-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // active class
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+
+    cards.forEach(card => {
+      const tags = card.dataset.tags || '';
+      const match = filter === 'all' || tags.split(' ').includes(filter);
+
+      if (match) {
+        card.classList.remove('hidden');
+        // re-déclencher reveal si pas encore visible
+        if (!card.classList.contains('visible')) {
+          requestAnimationFrame(() => card.classList.add('visible'));
+        }
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  });
+});
+
+/* ── HOVER CARD → HIGHLIGHT TABLE ROW ── */
+cards.forEach(card => {
+  const projectId = card.dataset.project;
+  const tableRow  = document.querySelector(`.tr-realisation[data-project="${projectId}"]`);
+
+  card.addEventListener('mouseenter', () => {
+    if (tableRow) {
+      tableRow.classList.add('row-highlight');
+      // ❌ on supprime le scroll automatique
+      // tableRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+
+  card.addEventListener('mouseleave', () => {
+    if (tableRow) tableRow.classList.remove('row-highlight');
+  });
+});
+
+/* ── HOVER TABLE ROW → HIGHLIGHT CARD ── */
+document.querySelectorAll('.tr-realisation').forEach(row => {
+  const projectId = row.dataset.project;
+  const card      = document.querySelector(`.e5-card[data-project="${projectId}"]`);
+
+  row.addEventListener('mouseenter', () => {
+    if (card && !card.classList.contains('hidden')) {
+      card.style.borderColor = 'rgba(124,58,237,0.5)';
+      card.style.boxShadow   = '0 0 0 2px rgba(124,58,237,0.2)';
+    }
+  });
+  row.addEventListener('mouseleave', () => {
+    if (card) {
+      card.style.borderColor = '';
+      card.style.boxShadow   = '';
+    }
+  });
+});
+
+/* ── CLICK CARD → SCROLL TO TABLE ROW ── */
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    const projectId = card.dataset.project;
+    const tableRow  = document.querySelector(`.tr-realisation[data-project="${projectId}"]`);
+    if (tableRow) {
+      tableRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // flash highlight
+      tableRow.classList.add('row-highlight');
+      setTimeout(() => tableRow.classList.remove('row-highlight'), 1800);
+    }
+  });
+});
+</script>
+</body>
+</html>

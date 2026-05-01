@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Développeur BTS SIO SLAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+  <div id="progress-bar"></div>
+  <a href="#" id="back-to-top" aria-label="Retour en haut">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Dorian Adam</a>
+    <ul class="nav-links">
+      <li><a href="index.html" >accueil</a></li>
+      <li><a href="apropos.html">à propos</a></li>
+      <li><a href="projets.html">projets</a></li>
+      <li><a href="experiences.html">expériences</a></li>
+      <li><a href="formation.html">formations</a></li>
+      <li><a href="competences.html">compétences</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="e5.html">E5</a></li>
+    </ul>
+    <a href="fichiers/CV Dorian Adam (1).pdf" class="nav-cta" target="_blank" rel="noopener">CV.pdf ↗</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <a href="index.html" class="mobile-link">accueil</a>
+    <a href="apropos.html" class="mobile-link">à propos</a>
+    <a href="projets.html" class="mobile-link">projets</a>
+    <a href="stages.html" class="mobile-link">expérience</a>
+    <a href="formation.html">formations</a>
+    <a href="competences.html" class="mobile-link">compétences</a>
+    <a href="contact.html" class="mobile-link">contact</a>
+    <a href="e5.html">E5</a>
+  </div>
+
+  <div class="page">
+    <div class="page-hero">
+      <div class="page-kicker">// À propos</div>
+      <h1>Qui suis-je ?</h1>
+      <p>Mon parcours, ma formation et mes motivations dans le développement logiciel.</p>
+    </div>
+<div class="page-content">
+    <div class="about-grid reveal">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-placeholder">
+          <img class="about-img" src="images/photo.jpeg" alt="photo de Dorian ADAM">
+        </div>
+        <div class="about-frame">
+
+        </div>
+      </div>
+      <div class="about-info reveal">
+        <h3>Dorian <span style="color:var(--green)">ADAM</span></h3>
+        <p>
+          Étudiant en 2ème année de BTS SIO option SLAM au Campus Sainte-Marguerite, je suis passionné par le développement d'applications web et logiciels. J'aime résoudre des problèmes complexes avec du code propre et efficace.
+        </p>
+        <p>
+En dehors de mes études, je m’intéresse à tout ce qui peut m’aider à mieux comprendre mon environnement professionnel et à améliorer ma façon de travailler. J’aime explorer, tester, apprendre et avancer étape par étape. Mon objectif est de rejoindre une équipe qui encourage la progression et la prise d’initiative.        </p>
+        <div class="about-badges">
+          <span class="badge"> Tours, France</span>
+          <span class="badge"> adam.dorian37@gmail.com</span>
+          <span class="badge">📱 +33 7 82 14 66 44</span>
+          <span class="badge"> Ouvert aux opportunités</span>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-num" data-target="4">0</div>
+            <div class="stat-label">Projets réalisés</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="2">0</div>
+            <div class="stat-label">Ans de formation</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-target="10">0</div>
+            <div class="stat-label">Technos maîtrisées</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- CENTRES D'INTÉRÊT -->
+      <div style="margin-top: 4rem;">
+        <h2 class="section-title reveal">Centres d'intérêt</h2>
+        <div class="section-sep reveal"></div>
+        <div class="cards-grid reveal">
+          <div class="section-card" style="pointer-events:none">
+            <div class="card-icon">🛠️</div>
+            <div class="card-title">Développement personnel</div>
+            <div class="card-desc">Projets side, challenges LeetCode, hackathons — j'apprends en construisant.</div>
+          </div>
+          <div class="section-card" style="pointer-events:none">
+            <div class="card-icon">🔐</div>
+            <div class="card-title">Cybersécurité</div>
+            <div class="card-desc">CTF, OWASP Top 10, bonnes pratiques de sécurité dans le code.</div>
+          </div>
+          <div class="section-card" style="pointer-events:none">
+            <div class="card-icon">📚</div>
+            <div class="card-title">Veille technologique</div>
+            <div class="card-desc">Dev.to, Hacker News, newsletters — je reste à jour sur l'écosystème web.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<section class="cta-banner">
+      <div class="reveal">
+        <h2>Intéressé par mon profil ?</h2>
+        <p>N'hésitez pas à me contacter pour discuter d'opportunités de stage, d'alternance ou simplement échanger autour du développement.</p>
+        <a href="contact.html" class="btn btn-primary">Me contacter →</a>
+      </div>
+    </section>
+
+  <footer>
+    <div class="footer-copy">
+      Conçu & développé par <span>Dorian ADAM</span> · <span id="footer-year"></span>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com/DorianA37" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/dorian-adam-8507aa255/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="mailto:adam.dorian37@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Développeur BTS SIO SLAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+  <div id="progress-bar"></div>
+  <a href="#" id="back-to-top" aria-label="Retour en haut">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Dorian Adam</a>
+    <ul class="nav-links">
+      <li><a href="index.html" >accueil</a></li>
+      <li><a href="apropos.html">à propos</a></li>
+      <li><a href="projets.html">projets</a></li>
+      <li><a href="experiences.html">expériences</a></li>
+      <li><a href="formation.html">formations</a></li>
+      <li><a href="competences.html">compétences</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="e5.html">E5</a></li>
+    </ul>
+    <a href="fichiers/CV Dorian Adam (1).pdf" class="nav-cta" target="_blank" rel="noopener">CV.pdf ↗</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <a href="index.html" class="mobile-link">accueil</a>
+    <a href="apropos.html" class="mobile-link">à propos</a>
+    <a href="projets.html" class="mobile-link">projets</a>
+    <a href="stages.html" class="mobile-link">expérience</a>
+    <a href="formation.html">formations</a>
+    <a href="competences.html" class="mobile-link">compétences</a>
+    <a href="contact.html" class="mobile-link">contact</a>
+    <a href="e5.html">E5</a>
+  </div>
+
+  <div class="page">
+    <div class="page-hero">
+      <div class="page-kicker">// Contact</div>
+      <h1>Travaillons ensemble</h1>
+            <div class="section-line"></div>
+
+      <p>Envoyez-moi un message !</p>
+    </div>
+<div class="page-content">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Une idée ? Un projet ? Un recrutement ?</h3>
+        <p>
+          N'hésitez pas à me contacter pour toute proposition : stage, alternance, collaboration ou simple échange autour du développement.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:adam.dorian37@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            adam.dorian37@gmail.com
+          </a>
+          <a href="https://github.com/DorianA37" class="contact-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            https://github.com/DorianA37
+          </a>
+          <a href="https://www.linkedin.com/in/dorian-adam-8507aa255/" class="contact-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+             https://www.linkedin.com/in/dorian-adam-8507aa255/
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label>NOM COMPLET</label>
+          <input type="text" id="form-name" placeholder="Jean Dupont" />
+        </div>
+        <div class="form-group">
+          <label>EMAIL</label>
+          <input type="email" id="form-email" placeholder="jean@example.com" />
+        </div>
+        <div class="form-group">
+          <label>SUJET</label>
+          <input type="text" id="form-subject" placeholder="Proposition de stage / alternance..." />
+        </div>
+        <div class="form-group">
+          <label>MESSAGE</label>
+          <textarea id="form-message" placeholder="Bonjour, je vous contacte au sujet de..."></textarea>
+        </div>
+        <button class="form-submit" onclick="handleFormSubmit()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Envoyer le message
+        </button>
+        <div class="form-msg" id="form-msg">
+          ✓ Message envoyé ! Je vous répondrai dans les plus brefs délais.
+        </div>
+      </div>
+    </div>
+
+</div>
+      
+
+
+
+  <footer>
+    <div class="footer-copy">
+      Conçu & développé par <span>Dorian ADAM</span> · <span id="footer-year"></span>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com/DorianA37" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/dorian-adam-8507aa255/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="mailto:adam.dorian37@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
