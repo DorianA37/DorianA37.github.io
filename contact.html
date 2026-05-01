@@ -80,30 +80,32 @@
         </div>
       </div>
       <div class="contact-form reveal">
-        <div class="form-group">
-          <label>NOM COMPLET</label>
-          <input type="text" id="form-name" placeholder="Jean Dupont" />
-        </div>
-        <div class="form-group">
-          <label>EMAIL</label>
-          <input type="email" id="form-email" placeholder="jean@example.com" />
-        </div>
-        <div class="form-group">
-          <label>SUJET</label>
-          <input type="text" id="form-subject" placeholder="Proposition de stage / alternance..." />
-        </div>
-        <div class="form-group">
-          <label>MESSAGE</label>
-          <textarea id="form-message" placeholder="Bonjour, je vous contacte au sujet de..."></textarea>
-        </div>
-        <button class="form-submit" onclick="handleFormSubmit()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          Envoyer le message
-        </button>
-        <div class="form-msg" id="form-msg">
-          ✓ Message envoyé ! Je vous répondrai dans les plus brefs délais.
-        </div>
-      </div>
+  <div class="form-group">
+    <label>NOM COMPLET</label>
+    <input type="text" id="form-name" placeholder="Jean Dupont" />
+    <span class="form-error" id="err-name">Le nom est requis.</span>
+  </div>
+  <div class="form-group">
+    <label>EMAIL</label>
+    <input type="email" id="form-email" placeholder="jean@example.com" />
+    <span class="form-error" id="err-email">Adresse email invalide.</span>
+  </div>
+  <div class="form-group">
+    <label>SUJET</label>
+    <input type="text" id="form-subject" placeholder="Proposition de stage / alternance..." />
+    <span class="form-error" id="err-subject">Le sujet est requis.</span>
+  </div>
+  <div class="form-group">
+    <label>MESSAGE</label>
+    <textarea id="form-message" placeholder="Bonjour, je vous contacte au sujet de..."></textarea>
+    <span class="form-error" id="err-message">Le message est requis.</span>
+  </div>
+  <button class="form-submit" id="submit-btn" onclick="handleFormSubmit()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    <span id="btn-label">Envoyer le message</span>
+  </button>
+  <div class="form-msg" id="form-msg"></div>
+</div>
     </div>
 
 </div>

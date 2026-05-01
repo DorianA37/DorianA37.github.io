@@ -122,20 +122,67 @@ if (typedEl) {
 }
 
 /* ── Contact form (mailto fallback) ── */
-window.handleFormSubmit = function () {
-  const name    = document.getElementById('form-name')?.value;
-  const email   = document.getElementById('form-email')?.value;
-  const subject = document.getElementById('form-subject')?.value;
-  const message = document.getElementById('form-message')?.value;
+window.handleFormSubmit = async function () {
+  const fields = {
+    name:    document.getElementById('form-name'),
+    email:   document.getElementById('form-email'),
+    subject: document.getElementById('form-subject'),
+    message: document.getElementById('form-message'),
+  };
+  const btn   = document.getElementById('submit-btn');
+  const label = document.getElementById('btn-label');
+  const msg   = document.getElementById('form-msg');
 
-  if (!name || !email || !message) {
-    alert('Veuillez remplir tous les champs obligatoires.');
-    return;
+  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(fields.email.value.trim());
+  const errors  = {
+    name:    !fields.name.value.trim(),
+    email:   !fields.email.value.trim() || !emailOk,
+    subject: !fields.subject.value.trim(),
+    message: !fields.message.value.trim(),
+  };
+
+  Object.entries(errors).forEach(([k, err]) => {
+    fields[k].classList.toggle('invalid', err);
+    document.getElementById('err-' + k).style.display = err ? 'block' : 'none';
+  });
+
+  msg.style.display = 'none';
+  if (Object.values(errors).some(Boolean)) return;
+
+  btn.disabled = true;
+  label.textContent = 'Envoi en cours...';
+
+  try {
+    const res = await fetch('https://formspree.io/f/xpqbzgpo', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name:    fields.name.value.trim(),
+        email:   fields.email.value.trim(),
+        subject: fields.subject.value.trim(),
+        message: fields.message.value.trim(),
+      }),
+    });
+
+    if (res.ok) {
+      msg.className = 'form-msg';
+      msg.textContent = '✓ Message envoyé ! Je vous répondrai dans les plus brefs délais.';
+      msg.style.display = 'block';
+      Object.values(fields).forEach(f => { f.value = ''; f.classList.remove('invalid'); });
+    } else {
+      msg.className = 'form-msg error';
+      msg.textContent = "Une erreur est survenue. Réessaie ou contacte-moi directement.";
+      msg.style.display = 'block';
+      btn.disabled = false;
+    }
+  } catch {
+    msg.className = 'form-msg error';
+    msg.textContent = "Impossible d'envoyer. Vérifie ta connexion et réessaie.";
+    msg.style.display = 'block';
+    btn.disabled = false;
   }
-  const mailto = `mailto:adam.dorian37@gmail.com?subject=${encodeURIComponent(subject || 'Contact depuis le portfolio')}&body=${encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`)}`;
-  window.location.href = mailto;
-  const msg = document.getElementById('form-msg');
-  if (msg) msg.style.display = 'block';
+
+  label.textContent = 'Envoyer le message';
 };
 
 /* ── Footer year ── */

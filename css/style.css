@@ -690,6 +690,9 @@ h2 {
   font-size: 0.8rem; color: var(--green);
   padding: 0.8rem; border: 1px solid rgba(0,255,135,0.3); border-radius: 8px;
 }
+.form-error { display: none; font-size: 0.75rem; color: #ff6b6b; font-family: 'JetBrains Mono', monospace; }
+.form-group input.invalid, .form-group textarea.invalid { border-color: #ff6b6b; }
+.form-msg.error { color: #ff6b6b; border-color: rgba(255,107,107,0.3); }
 
 /* ─── FOOTER ─── */
 footer {
