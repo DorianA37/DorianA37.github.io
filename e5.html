@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/e5.css">
 </head>
 <body>
   <div class="grid-bg"></div>
@@ -31,7 +32,7 @@
       <li><a href="contact.html">contact</a></li>
       <li><a href="e5.html">E5</a></li>
     </ul>
-    <a href="fichiers/CV Dorian Adam (1).pdf" class="nav-cta" target="_blank" rel="noopener">CV.pdf ↗</a>
+    <a href="fichiers/CV_Dorian_Adam.pdf" class="nav-cta" target="_blank" rel="noopener">CV.pdf ↗</a>
     <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -60,332 +61,57 @@
 
     <div class="page-content">
 
-      <!-- ═══ TABLEAU DE COMPÉTENCES ═══ -->
-      <section class="e5-section reveal">
-        <h2 class="section-title">Tableau de synthèse des réalisations professionnelles</h2>
-        <div class="section-sep"></div>
-        <p class="e5-intro">
-          Référentiel BTS SIO — Session 2026 ·
-          <a href="https://doriana37.github.io/" target="_blank" rel="noopener" class="e5-url">doriana37.github.io</a>
-        </p>
-
-        <div class="table-scroll-hint">← DÉFILER HORIZONTALEMENT →</div>
-
-        <div class="table-wrapper reveal">
-          <table class="e5-table" id="competence-table">
-            <thead>
-              <tr>
-                <th rowspan="2" class="col-realisation">Réalisations professionnelles</th>
-                <th rowspan="2" class="col-period">Période</th>
-                <th colspan="5" class="th-bloc">Gérer le patrimoine informatique</th>
-                <th colspan="3" class="th-bloc">Répondre aux incidents</th>
-                <th colspan="3" class="th-bloc">Développer la présence en ligne</th>
-                <th colspan="3" class="th-bloc">Travailler en mode projet</th>
-                <th colspan="3" class="th-bloc">Mettre à disposition un service</th>
-                <th colspan="4" class="th-bloc">Développement professionnel</th>
-              </tr>
-              <tr>
-                <th class="th-comp" title="Recenser et identifier les ressources numériques">GPI 1</th>
-                <th class="th-comp" title="Exploiter des référentiels, normes et standards">GPI 2</th>
-                <th class="th-comp" title="Mettre en place et vérifier les niveaux d'habilitation">GPI 3</th>
-                <th class="th-comp" title="Vérifier les conditions de la continuité d'un service">GPI 4</th>
-                <th class="th-comp" title="Gérer des sauvegardes">GPI 5</th>
-                <th class="th-comp" title="Collecter, suivre et orienter des demandes">INC 1</th>
-                <th class="th-comp" title="Traiter des demandes réseau et système">INC 2</th>
-                <th class="th-comp" title="Traiter des demandes applicatives">INC 3</th>
-                <th class="th-comp" title="Valoriser l'image de l'organisation sur les médias numériques">WEB 1</th>
-                <th class="th-comp" title="Référencer les services en ligne et mesurer leur visibilité">WEB 2</th>
-                <th class="th-comp" title="Participer à l'évolution d'un site Web">WEB 3</th>
-                <th class="th-comp" title="Analyser les objectifs et modalités d'organisation d'un projet">PRJ 1</th>
-                <th class="th-comp" title="Planifier les activités">PRJ 2</th>
-                <th class="th-comp" title="Évaluer les indicateurs de suivi et analyser les écarts">PRJ 3</th>
-                <th class="th-comp" title="Réaliser les tests d'intégration et d'acceptation">SRV 1</th>
-                <th class="th-comp" title="Déployer un service">SRV 2</th>
-                <th class="th-comp" title="Accompagner les utilisateurs">SRV 3</th>
-                <th class="th-comp" title="Mettre en place son environnement d'apprentissage personnel">DEV 1</th>
-                <th class="th-comp" title="Mettre en œuvre des outils et stratégies de veille">DEV 2</th>
-                <th class="th-comp" title="Gérer son identité professionnelle">DEV 3</th>
-                <th class="th-comp" title="Développer son projet professionnel">DEV 4</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- ── EN COURS DE FORMATION ── -->
-              <tr class="tr-category">
-                <td colspan="22">Réalisations en cours de formation</td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="mivdl-front">
-                <td class="td-title">
-                  <span class="realisation-label">Site Web MadeInValDeLoire</span>
-                  <span class="realisation-sub">PHP, HTML, CSS, JS, MySQL, CodeIgniter4 — visiteur</span>
-                </td>
-                <td class="td-period">09/2025<br>11/2025</td>
-                <td>✔</td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td>✔</td><td></td>
-                <td>✔</td><td></td><td></td>
-                <td>✔</td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="mivdl-admin">
-                <td class="td-title">
-                  <span class="realisation-label">Site Web MadeInValDeLoire</span>
-                  <span class="realisation-sub">PHP, HTML, CSS, JS, MySQL, CodeIgniter4 — back / admin</span>
-                </td>
-                <td class="td-period">11/2025<br>12/2025</td>
-                <td>✔</td><td>✔</td><td>✔</td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td></td><td></td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td>✔</td><td></td>
-                <td>✔</td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="ecommerce">
-                <td class="td-title">
-                  <span class="realisation-label">Site web e-commerce</span>
-                  <span class="realisation-sub">PHP, HTML, CSS, PhpStorm</span>
-                </td>
-                <td class="td-period">01/2025<br>03/2025</td>
-                <td></td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td>✔</td><td></td>
-                <td>✔</td><td>✔</td><td></td>
-                <td>✔</td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="veille">
-                <td class="td-title">
-                  <span class="realisation-label">Veille informationnelle LinkedIn</span>
-                </td>
-                <td class="td-period">09/2024<br>06/2026</td>
-                <td></td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="oc">
-                <td class="td-title">
-                  <span class="realisation-label">Auto-formation Openclassroom</span>
-                </td>
-                <td class="td-period">09/2024<br>06/2026</td>
-                <td></td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td>✔</td><td>✔</td><td>✔</td><td>✔</td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="cyber">
-                <td class="td-title">
-                  <span class="realisation-label">Projet Cyber-entrainement</span>
-                  <span class="realisation-sub">C#, SQLite, WPF</span>
-                </td>
-                <td class="td-period">01/2026<br>04/2026</td>
-                <td>✔</td><td>✔</td><td>✔</td><td></td><td></td>
-                <td>✔</td><td></td><td>✔</td>
-                <td></td><td></td><td></td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="glpi">
-                <td class="td-title"><span class="realisation-label">TP GLPI</span></td>
-                <td class="td-period">2024/2025</td>
-                <td>✔</td><td>✔</td><td></td><td></td><td></td>
-                <td>✔</td><td>✔</td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td></td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="ad">
-                <td class="td-title"><span class="realisation-label">TP Active Directory</span></td>
-                <td class="td-period">2024/2025</td>
-                <td>✔</td><td>✔</td><td>✔</td><td>✔</td><td></td>
-                <td></td><td>✔</td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td>✔</td><td></td>
-                <td></td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="dos">
-                <td class="td-title"><span class="realisation-label">TP DOS</span></td>
-                <td class="td-period">2024/2025</td>
-                <td>✔</td><td></td><td></td><td></td><td></td>
-                <td></td><td>✔</td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td>✔</td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="cluster">
-                <td class="td-title"><span class="realisation-label">TP Cluster MySQL</span></td>
-                <td class="td-period">2025</td>
-                <td>✔</td><td>✔</td><td></td><td>✔</td><td>✔</td>
-                <td></td><td>✔</td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td>✔</td><td></td>
-                <td>✔</td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="maui">
-                <td class="td-title"><span class="realisation-label">TP MAUI</span></td>
-                <td class="td-period">avr. 2025</td>
-                <td></td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td>✔</td><td></td><td></td>
-                <td>✔</td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="tests">
-                <td class="td-title">
-                  <span class="realisation-label">TP Tests Unitaires</span>
-                  <span class="realisation-sub">PHP</span>
-                </td>
-                <td class="td-period">oct. 2025</td>
-                <td></td><td>✔</td><td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td>✔</td><td></td><td></td>
-                <td>✔</td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="triggers">
-                <td class="td-title">
-                  <span class="realisation-label">TP Triggers, Fonctions, Procédures</span>
-                  <span class="realisation-sub">MySQL</span>
-                </td>
-                <td class="td-period">10/2025<br>12/2025</td>
-                <td></td><td>✔</td><td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td>✔</td><td></td><td></td>
-                <td>✔</td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="phpcs">
-                <td class="td-title">
-                  <span class="realisation-label">Formation utilisateur PHPCS</span>
-                  <span class="realisation-sub">Code Sniffer</span>
-                </td>
-                <td class="td-period">nov. 2025</td>
-                <td></td><td>✔</td><td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td>✔</td><td>✔</td><td></td><td></td>
-              </tr>
-
-              <!-- ── STAGE 1ère ANNÉE ── -->
-              <tr class="tr-category">
-                <td colspan="22">Réalisations en milieu professionnel — 1ère année</td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="citeradio-app">
-                <td class="td-title">
-                  <span class="realisation-label">Application CITERADIO</span>
-                  <span class="realisation-sub">MIT App Inventor, HTML, CSS, PHP</span>
-                </td>
-                <td class="td-period">05/2025<br>06/2025</td>
-                <td>✔</td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td>✔</td><td></td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td></td><td>✔</td><td>✔</td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="citeradio-jeu-front">
-                <td class="td-title">
-                  <span class="realisation-label">Jeux concours CITERADIO — visiteur</span>
-                  <span class="realisation-sub">HTML, CSS, PHP</span>
-                </td>
-                <td class="td-period">05/2025<br>06/2025</td>
-                <td></td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td></td><td></td>
-                <td>✔</td><td>✔</td><td></td>
-                <td></td><td></td><td></td><td></td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="citeradio-jeu-admin">
-                <td class="td-title">
-                  <span class="realisation-label">Jeux concours CITERADIO — admin</span>
-                  <span class="realisation-sub">HTML, CSS, PHP</span>
-                </td>
-                <td class="td-period">05/2025<br>06/2025</td>
-                <td></td><td></td><td>✔</td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td></td><td></td><td>✔</td>
-                <td></td><td></td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td></td><td></td><td></td><td></td>
-              </tr>
-
-              <!-- ── STAGE 2ème ANNÉE ── -->
-              <tr class="tr-category">
-                <td colspan="22">Réalisations en milieu professionnel — 2ème année</td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="cheikhnico">
-                <td class="td-title">
-                  <span class="realisation-label">Site cheikhnico.org — thème sur-mesure</span>
-                  <span class="realisation-sub">WordPress, HTML, SCSS, JS, PHP</span>
-                </td>
-                <td class="td-period">04/2026<br>05/2026</td>
-                <td></td><td>✔</td><td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td></td><td>✔</td><td>✔</td>
-              </tr>
-
-              <tr class="tr-realisation" data-project="dominique">
-                <td class="td-title">
-                  <span class="realisation-label">Landing page Dominique Chauvelier</span>
-                  <span class="realisation-sub">HTML, CSS, JS</span>
-                </td>
-                <td class="td-period">mai 2026</td>
-                <td></td><td></td><td></td><td></td><td></td>
-                <td></td><td></td><td>✔</td>
-                <td>✔</td><td>✔</td><td>✔</td>
-                <td>✔</td><td>✔</td><td></td>
-                <td>✔</td><td>✔</td><td></td>
-                <td></td><td></td><td></td><td></td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
+       <div class="scroll-hint">← DÉFILER HORIZONTALEMENT →</div>
+  <div class="wrap">
+    <table id="competence-table">
+      <thead>
+        <tr>
+          <th rowspan="2" class="col-realisation">Réalisations professionnelles</th>
+          <th rowspan="2" class="col-period">Période</th>
+          <th colspan="5" class="th-bloc b1">Gérer le patrimoine informatique</th>
+          <th colspan="3" class="th-bloc b2">Répondre aux incidents</th>
+          <th colspan="3" class="th-bloc b3">Développer la présence en ligne</th>
+          <th colspan="3" class="th-bloc b4">Travailler en mode projet</th>
+          <th colspan="3" class="th-bloc b5">Mettre à disposition un service</th>
+          <th colspan="4" class="th-bloc b6">Développement professionnel</th>
+        </tr>
+        <tr>
+          <th class="th-comp comp-b1">Recenser et identifier les ressources numériques</th>
+          <th class="th-comp comp-b1">Exploiter des référentiels, normes et standards</th>
+          <th class="th-comp comp-b1">Mettre en place et vérifier les niveaux d'habilitation</th>
+          <th class="th-comp comp-b1">Vérifier les conditions de la continuité d'un service</th>
+          <th class="th-comp comp-b1">Gérer des sauvegardes</th>
+          <th class="th-comp comp-b2">Collecter, suivre et orienter des demandes</th>
+          <th class="th-comp comp-b2">Traiter des demandes réseau et système</th>
+          <th class="th-comp comp-b2">Traiter des demandes applicatives</th>
+          <th class="th-comp comp-b3">Valoriser l'image de l'organisation sur les médias numériques</th>
+          <th class="th-comp comp-b3">Référencer les services en ligne et mesurer leur visibilité</th>
+          <th class="th-comp comp-b3">Participer à l'évolution d'un site Web</th>
+          <th class="th-comp comp-b4">Analyser les objectifs et modalités d'organisation d'un projet</th>
+          <th class="th-comp comp-b4">Planifier les activités</th>
+          <th class="th-comp comp-b4">Évaluer les indicateurs de suivi et analyser les écarts</th>
+          <th class="th-comp comp-b5">Réaliser les tests d'intégration et d'acceptation</th>
+          <th class="th-comp comp-b5">Déployer un service</th>
+          <th class="th-comp comp-b5">Accompagner les utilisateurs dans la mise en place</th>
+          <th class="th-comp comp-b6">Mettre en place son environnement d'apprentissage</th>
+          <th class="th-comp comp-b6">Mettre en œuvre des outils et stratégies de veille</th>
+          <th class="th-comp comp-b6">Gérer son identité professionnelle</th>
+          <th class="th-comp comp-b6">Développer son projet professionnel</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
 
         <!-- Légende -->
         <div class="e5-legend reveal">
-          <div class="legend-item"><span class="legend-check">✔</span> Compétence mobilisée</div>
-          <div class="legend-item"><span class="legend-dot bloc-gpi"></span> Gérer le patrimoine informatique (GPI)</div>
-          <div class="legend-item"><span class="legend-dot bloc-inc"></span> Répondre aux incidents (INC)</div>
-          <div class="legend-item"><span class="legend-dot bloc-web"></span> Présence en ligne (WEB)</div>
-          <div class="legend-item"><span class="legend-dot bloc-prj"></span> Mode projet (PRJ)</div>
-          <div class="legend-item"><span class="legend-dot bloc-srv"></span> Mise à disposition (SRV)</div>
-          <div class="legend-item"><span class="legend-dot bloc-dev"></span> Développement pro (DEV)</div>
+          <div class="legend-item">Compétence mobilisée</div>
+          <div class="legend-item bloc-gpi"> Gérer le patrimoine informatique</div>
+          <div class="legend-item bloc-inc"> Répondre aux incidents </div>
+          <div class="legend-item bloc-web"> Présence en ligne </div>
+          <div class="legend-item bloc-prj"> Mode projet </div>
+          <div class="legend-item bloc-srv"> Mise à disposition </div>
+          <div class="legend-item bloc-dev"> Développement pro </div>
         </div>
       </section>
 
@@ -667,148 +393,117 @@
   </div><!-- /.page -->
 
   <script src="js/main.js"></script>
-<script>
-/* ═══════════════════════════════════════════
-   JS — E5.html  (main.js + E5.js fusionnés)
-   ═══════════════════════════════════════════ */
-
-/* ── FOOTER YEAR ── */
-const fyEl = document.getElementById('footer-year');
-if (fyEl) fyEl.textContent = new Date().getFullYear();
-
-/* ── PROGRESS BAR ── */
-const progressBar = document.getElementById('progress-bar');
-window.addEventListener('scroll', () => {
-  const scrollTop = window.scrollY;
-  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-  if (progressBar) progressBar.style.width = pct + '%';
-});
-
-/* ── NAVBAR SHRINK ── */
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 60);
-});
-
-/* ── BACK TO TOP ── */
-const btt = document.getElementById('back-to-top');
-window.addEventListener('scroll', () => {
-  if (btt) btt.classList.toggle('visible', window.scrollY > 300);
-});
-if (btt) {
-  btt.addEventListener('click', e => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
-
-/* ── MOBILE MENU ── */
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const mobileMenu   = document.getElementById('mobileMenu');
-const mobileClose  = document.getElementById('mobileClose');
-
-if (hamburgerBtn && mobileMenu) {
-  hamburgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
-}
-if (mobileClose && mobileMenu) {
-  mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-}
-
-/* ── REVEAL ON SCROLL (IntersectionObserver) ── */
-const revealEls = document.querySelectorAll('.reveal');
-const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      // petit délai en cascade pour les éléments dans le même viewport
-      entry.target.style.transitionDelay = (i * 0.04) + 's';
-      entry.target.classList.add('visible');
-      revealObs.unobserve(entry.target);
+  <script src="js/e5.js"></script>
+ <script>
+    const colors = {
+      b1: '#00ff87', b2: '#ff6b7a', b3: '#00d4ff',
+      b4: '#c084fc', b5: '#facc15', b6: '#00ff87'
+    };
+ 
+    // Correspondance index colonne → bloc
+    const blocs = [
+      'b1','b1','b1','b1','b1',
+      'b2','b2','b2',
+      'b3','b3','b3',
+      'b4','b4','b4',
+      'b5','b5','b5',
+      'b6','b6','b6','b6'
+    ];
+ 
+    function chk(bloc) {
+      const c = colors[bloc];
+      return `<span class="chk chk-${bloc}">
+        <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="13" height="13" rx="3" fill="${c}" fill-opacity="0.15"/>
+          <path d="M3 6.5L5.5 9L10 4" stroke="${c}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>`;
     }
-  });
-}, { threshold: 0.08 });
-
-revealEls.forEach(el => revealObs.observe(el));
-
-/* ── FILTRES CARDS ── */
-const filterBtns = document.querySelectorAll('.e5-filter');
-const cards      = document.querySelectorAll('.e5-card');
-
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    // active class
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const filter = btn.dataset.filter;
-
-    cards.forEach(card => {
-      const tags = card.dataset.tags || '';
-      const match = filter === 'all' || tags.split(' ').includes(filter);
-
-      if (match) {
-        card.classList.remove('hidden');
-        // re-déclencher reveal si pas encore visible
-        if (!card.classList.contains('visible')) {
-          requestAnimationFrame(() => card.classList.add('visible'));
-        }
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-  });
-});
-
-/* ── HOVER CARD → HIGHLIGHT TABLE ROW ── */
-cards.forEach(card => {
-  const projectId = card.dataset.project;
-  const tableRow  = document.querySelector(`.tr-realisation[data-project="${projectId}"]`);
-
-  card.addEventListener('mouseenter', () => {
-    if (tableRow) {
-      tableRow.classList.add('row-highlight');
-      // ❌ on supprime le scroll automatique
-      // tableRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+ 
+    function td(v, bloc) {
+      const cls = v ? ` class="c-${bloc}"` : '';
+      return `<td${cls}>${v ? chk(bloc) : ''}</td>`;
     }
-  });
-
-  card.addEventListener('mouseleave', () => {
-    if (tableRow) tableRow.classList.remove('row-highlight');
-  });
-});
-
-/* ── HOVER TABLE ROW → HIGHLIGHT CARD ── */
-document.querySelectorAll('.tr-realisation').forEach(row => {
-  const projectId = row.dataset.project;
-  const card      = document.querySelector(`.e5-card[data-project="${projectId}"]`);
-
-  row.addEventListener('mouseenter', () => {
-    if (card && !card.classList.contains('hidden')) {
-      card.style.borderColor = 'rgba(124,58,237,0.5)';
-      card.style.boxShadow   = '0 0 0 2px rgba(124,58,237,0.2)';
+ 
+    function period(p) {
+      return `<td class="td-period">${p.replace('\n', '<br>')}</td>`;
     }
-  });
-  row.addEventListener('mouseleave', () => {
-    if (card) {
-      card.style.borderColor = '';
-      card.style.boxShadow   = '';
+ 
+    function title(label, sub = '') {
+      return `<td class="td-title">
+        <span class="realisation-label">${label}</span>
+        ${sub ? `<span class="realisation-sub">${sub}</span>` : ''}
+      </td>`;
     }
-  });
-});
-
-/* ── CLICK CARD → SCROLL TO TABLE ROW ── */
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    const projectId = card.dataset.project;
-    const tableRow  = document.querySelector(`.tr-realisation[data-project="${projectId}"]`);
-    if (tableRow) {
-      tableRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // flash highlight
-      tableRow.classList.add('row-highlight');
-      setTimeout(() => tableRow.classList.remove('row-highlight'), 1800);
+ 
+    function cat(label) {
+      return `<tr class="tr-category"><td colspan="23">${label}</td></tr>`;
     }
-  });
-});
+ 
+    function renderRows(arr) {
+      return arr.map(r => {
+        const cells = r.v.map((v, i) => td(v, blocs[i])).join('');
+        return `<tr class="tr-realisation">${title(r.label, r.sub)}${period(r.period)}${cells}</tr>`;
+      }).join('');
+    }
+ 
+    // ── DONNÉES ──
+    const formation = [
+      { label:'Site Web MadeInValDeLoire', sub:'PHP, HTML, CSS, JS, MySQL, CodeIgniter4 — visiteur', period:'09/2025\n11/2025',
+        v:[0,1,1,0,1, 1,0,1, 1,0,1, 1,1,1, 1,1,1, 1,0,0,0] },
+      { label:'Site Web MadeInValDeLoire', sub:'PHP, HTML, CSS, JS, MySQL, CodeIgniter4 — back / admin', period:'11/2025\n12/2025',
+        v:[0,1,1,0,1, 1,0,1, 1,0,1, 0,1,1, 1,0,0, 1,1,0,0] },
+      { label:'Site web e-commerce', sub:'PHP, HTML, CSS, PhpStorm', period:'01/2025\n03/2025',
+        v:[0,1,1,0,1, 1,0,1, 0,0,1, 1,1,1, 1,0,0, 1,1,0,0] },
+      { label:'Veille informationnelle LinkedIn', sub:'', period:'09/2024\n06/2026',
+        v:[0,0,0,0,0, 0,0,0, 0,0,0, 0,0,0, 0,0,0, 1,1,1,0] },
+      { label:'Auto-formation Openclassroom', sub:'', period:'09/2024\n06/2026',
+        v:[0,0,0,0,0, 0,0,0, 0,0,0, 0,0,0, 0,0,0, 1,0,0,0] },
+      { label:'Projet Cyber-entrainement', sub:'C#, SQLite, WPF', period:'01/2026\n04/2026',
+        v:[0,1,1,0,1, 1,0,1, 0,0,0, 1,1,1, 1,0,1, 1,0,0,0] },
+      { label:'TP GLPI', sub:'', period:'2024/2025',
+        v:[1,0,0,1,0, 1,1,0, 0,0,0, 0,0,0, 1,1,0, 1,0,0,0] },
+      { label:'TP Active Directory', sub:'', period:'2024/2025',
+        v:[1,0,1,0,0, 1,1,0, 0,0,0, 0,0,0, 1,1,0, 1,0,0,0] },
+      { label:'TP DOS', sub:'', period:'2024/2025',
+        v:[1,0,0,1,0, 0,1,0, 0,0,0, 0,0,0, 1,1,0, 1,0,0,0] },
+      { label:'TP Cluster MySQL', sub:'', period:'2025',
+        v:[1,0,0,1,1, 0,1,0, 0,0,0, 0,0,0, 1,1,0, 1,0,0,0] },
+      { label:'TP MAUI', sub:'', period:'avr. 2025',
+        v:[0,1,0,0,1, 0,1,1, 0,0,0, 0,0,0, 1,0,0, 0,0,0,0] },
+      { label:'TP Tests Unitaires', sub:'PHP', period:'oct. 2025',
+        v:[0,0,0,0,0, 0,0,1, 0,0,0, 0,0,0, 1,0,0, 0,0,0,0] },
+      { label:'TP Triggers, Fonctions, Procédures', sub:'MySQL', period:'10/2025\n12/2025',
+        v:[0,1,1,0,1, 0,0,1, 0,0,0, 0,0,0, 1,0,0, 0,0,0,0] },
+      { label:'Formation utilisateur PHPCS', sub:'Code Sniffer', period:'nov. 2025',
+        v:[1,1,0,0,0, 0,0,0, 0,0,0, 0,0,0, 1,0,1, 1,0,0,0] },
+    ];
+ 
+    const stage1 = [
+      { label:'Application CITERADIO', sub:'MIT App Inventor, HTML, CSS, PHP', period:'05/2025\n06/2025',
+        v:[1,1,1,1,1, 1,0,1, 1,1,0, 1,1,0, 1,0,1, 1,1,0,0] },
+      { label:'Jeux concours CITERADIO — visiteur', sub:'HTML, CSS, PHP', period:'05/2025\n06/2025',
+        v:[0,1,1,0,1, 0,0,0, 1,0,1, 1,1,0, 1,1,1, 1,1,0,0] },
+      { label:'Jeux concours CITERADIO — admin', sub:'HTML, CSS, PHP', period:'05/2025\n06/2025',
+        v:[0,1,1,0,1, 0,0,0, 1,0,1, 1,1,0, 1,1,1, 1,1,0,0] },
+    ];
+ 
+    const stage2 = [
+      { label:'Site cheikhnico.org — thème sur-mesure', sub:'WordPress, HTML, SCSS, JS, PHP', period:'04/2026\n05/2026',
+        v:[0,1,1,0,1, 1,0,1, 1,1,1, 1,1,1, 1,1,1, 1,1,1,1] },
+      { label:'Landing page Dominique Chauvelier', sub:'HTML, CSS, JS', period:'mai 2026',
+        v:[0,1,0,0,0, 0,0,0, 0,0,0, 0,1,1, 0,0,0, 0,0,0,0] },
+    ];
+    
+ 
+    document.getElementById('tbody').innerHTML =
+      cat('Réalisations en cours de formation') +
+      renderRows(formation) +
+      cat('Réalisations en milieu professionnel — 1ère année') +
+      renderRows(stage1) +
+      cat('Réalisations en milieu professionnel — 2ème année') +
+      renderRows(stage2);
+  
 </script>
 </body>
 </html>
